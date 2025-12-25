@@ -1,0 +1,101 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #444; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  /* min-width: 320px;
+  min-height: 100vh; */
+}
+
+.summary {
+  padding: 1rem;
+  background-color: #242424;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.head {
+  height: 50px;
+}
+
+.nickname {
+  font-size: 1.6rem;
+  font-weight: bold;
+  /* line-height: 0; */
+
+  margin: -0.4rem 0;
+}
+
+.matches-text {
+  display: inline-block;
+  color: #bbb;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.5rem;
+}
+
+.result {
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0.2rem;
+  border-radius: 2px;
+  border-bottom: 3px solid;
+}
+
+.win {
+  border-color: rgb(2, 124, 2);
+}
+
+.loss {
+  border-color: rgb(255, 59, 52);
+}
+
+.draw {
+  border-block-color: rgb(0, 136, 221);
+}
+
+/* 
+<400 - Coal I
+<500 - Coal II
+<600 - Coal III
+<700 - Iron I
+<800 - Iron II
+<900 - Iron III
+<1000 - Gold I
+<1100 - Gold II
+<1200 - Gold III
+<1300 - Emerald I
+<1400 - Emerald II
+<1500 - Emerald III
+<1650 - Diamond I
+<1800 - Diamond II
+<2000 - Diamond III
+>=2000 - Netherite
+*/
