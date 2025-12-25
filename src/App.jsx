@@ -21,7 +21,9 @@ function getRankName(eloRate) {
 }
 
 function App() {
-  const id = "silverrruns";
+  // Extract minecraft name from URL path
+  const id = window.location.pathname.split("/").filter(Boolean).pop();
+
   const [profile, setProfile] = useState({});
   const [matches, setMatches] = useState([]);
 
@@ -41,7 +43,7 @@ function App() {
 
   const fetchMatches = async (identifier, count = 10) => {
     const apiBaseURL = "https://api.mcsrranked.com";
-    const endpoint = `${apiBaseURL}/users/${identifier}/matches?count=${count}`;
+    const endpoint = `${apiBaseURL}/users/${identifier}/matches?count=${count}&type=2`;
 
     try {
       const req = await fetch(endpoint);

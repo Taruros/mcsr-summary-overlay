@@ -1,7 +1,7 @@
 const Match = ({ match, profile }) => {
-  const change = match.changes.find(
-    (change) => change.uuid === profile.uuid
-  ).change;
+  const changeObj = match.changes?.find((x) => x.uuid === profile.uuid);
+  const change = changeObj?.change ?? 0;
+
   return (
     <div
       className={`result ${
