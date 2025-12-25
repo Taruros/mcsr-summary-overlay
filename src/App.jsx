@@ -67,9 +67,9 @@ function App() {
     return () => clearInterval(interval);
   }, [id]);
 
-  useEffect(() => {
-    console.log(matches);
-  }, [matches]);
+  // useEffect(() => {
+  //   // TODO: Effect on new finished match
+  // }, [matches]);
 
   return (
     <div className="summary">
